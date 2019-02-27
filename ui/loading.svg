@@ -1,0 +1,14 @@
+<svg version="1.1" viewBox="0 0 500 500" width="500" height="500" xmlns="http://www.w3.org/2000/svg">
+	<style type="text/css"><![CDATA[
+    path {
+      animation: spin .6s infinite linear;
+      transform-origin: 195px 195px;
+    }
+    @keyframes spin {
+      from { transform: translate(55px, 55px) rotate(0deg); }
+      to { transform: translate(55px, 55px) rotate(360deg); }
+    }
+	]]></style>
+  <rect width="500" height="500" fill="none"/>
+  <path fill="rgb(151,0,0)" d="M195 19.99995C195 10.335 187.139 2.41676 177.513 3.28355C85.153 11.6003 11.60045 85.1525 3.283705 177.513C2.41691 187.139 10.33515 195 20.0001 195C29.6651 195 37.39805 187.1345 38.4583 177.528C46.51765 104.502 104.5025 46.5175 177.528 38.45815C187.135 37.3979 195 29.66495 195 19.99995Z"/>
+</svg>

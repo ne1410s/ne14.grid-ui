@@ -1,0 +1,6 @@
+{
+    "portNumber": 8081,
+    "dbConnection": "./dist/database/grid.db",
+    "dbLogging": false,
+    "tokenMinutes": 15
+}

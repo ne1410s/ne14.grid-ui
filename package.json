@@ -1,10 +1,19 @@
 {
-  "name": "@ne1410s/grid",
+  "name": "@ne1410s/grid-ui",
   "version": "0.0.1",
   "description": "ES Griddler Services and UI",
-  "main": "index.js",
+  "main": "dist/server.js",
+  "module": "dist/server.es.js",
+  "files": [
+    "dist"
+  ],
+  "types": "dist/server.d.ts",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "node dist/server.js",
+    "clean": "rimraf dist",
+    "build": "tsc",
+    "dev": "npx tsc-watch --onSuccess \"npm run start\"",
+    "publish-patch": "npm version patch && npm run build && npm publish --access public"
   },
   "repository": {
     "type": "git",
@@ -16,19 +25,35 @@
     "Griddler",
     "UI",
     "Nonogram",
+    "GCHQ",
     "Puzzle"
   ],
-  "author": "ne1410s",
+  "author": "ne1410s <pgj646@gmail.com> (http://ne1410s.co.uk)",
   "license": "MIT",
   "bugs": {
     "url": "https://github.com/ne1410s/ne14.grid/issues"
   },
   "homepage": "https://github.com/ne1410s/ne14.grid#readme",
-  "dependencies": {
-    "@ne1410s/griddler": "^1.1.0"
-  },
   "devDependencies": {
+    "@types/cors": "^2.8.4",
+    "@types/ejs": "^2.6.3",
+    "@types/express": "^4.16.1",
+    "@types/jsonwebtoken": "^8.3.0",
+    "@types/sequelize": "^4.27.38",
+    "@types/sqlite3": "^3.1.4",
     "rimraf": "^2.6.3",
+    "tsc-watch": "^2.1.2",
     "typescript": "^3.3.3333"
+  },
+  "dependencies": {
+    "@ne1410s/crypto": "^0.1.7",
+    "@ne1410s/griddler": "^1.1.0",
+    "@ne1410s/http": "^0.1.0",
+    "cors": "^2.8.5",
+    "ejs": "^2.6.1",
+    "express": "^4.16.4",
+    "jsonwebtoken": "^8.5.0",
+    "sequelize": "^4.42.1",
+    "sqlite3": "^4.0.6"
   }
 }

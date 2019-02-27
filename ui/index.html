@@ -1,0 +1,43 @@
+<!doctype html>
+<html>
+<head>
+    <meta charset="utf-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1"/>
+    <title>Griddler Express</title>
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon"/>
+    <link rel="stylesheet" href="style.css"/>
+    <script src='https://www.google.com/recaptcha/api.js?render=<%= recaptcha %>'></script>
+    <script src="main.js"></script>
+</head>
+<body>
+
+    <section class="secure">
+
+        <header>
+            <a id="logout" href="javascript:void(0)">Logout</a>
+        </header>
+        
+    </section>
+
+    <div class="modal login">
+        <div class="body">
+            <input type="text" placeholder="username" spellcheck="false" autocomplete="false"/>
+            <input type="password" placeholder="password" />
+            <span class="errors"></span>
+            <input type="button" value="Login"/>
+            <span><a id="register" href="javascript:void(0);">New to the site? Register here</a></span>
+        </div>
+    </div>
+
+    <div class="modal register">
+        <div class="body">
+            <input type="text" placeholder="username" spellcheck="false" autocomplete="false"/>
+            <input type="password" placeholder="password"/>
+            <span class="errors"></span>
+            <input type="button" value="Register"/>
+            <span><a id="login" href="javascript:void(0)">Have an account? Login here</a></span>
+        </div>
+    </div>
+
+</body>
+</html>
