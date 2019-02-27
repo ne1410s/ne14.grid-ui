@@ -1,0 +1,34 @@
+{
+  "name": "@ne1410s/grid",
+  "version": "0.0.1",
+  "description": "ES Griddler Services and UI",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ne1410s/ne14.grid.git"
+  },
+  "keywords": [
+    "ES",
+    "Grid",
+    "Griddler",
+    "UI",
+    "Nonogram",
+    "Puzzle"
+  ],
+  "author": "ne1410s",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/ne1410s/ne14.grid/issues"
+  },
+  "homepage": "https://github.com/ne1410s/ne14.grid#readme",
+  "dependencies": {
+    "@ne1410s/griddler": "^1.1.0"
+  },
+  "devDependencies": {
+    "rimraf": "^2.6.3",
+    "typescript": "^3.3.3333"
+  }
+}
