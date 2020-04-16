@@ -12,7 +12,6 @@
     "start": "node dist/server.js",
     "clean": "rimraf dist",
     "build": "tsc",
-    "dev": "npx tsc-watch --onSuccess \"npm run start\"",
     "publish-patch": "npm version patch && npm run build && npm publish --access public"
   },
   "repository": {
@@ -35,16 +34,10 @@
   },
   "homepage": "https://github.com/ne1410s/ne14.grid#readme",
   "devDependencies": {
-    "@types/cors": "^2.8.5",
-    "@types/ejs": "^2.6.3",
-    "@types/express": "^4.16.1",
-    "rimraf": "^2.6.3",
-    "tsc-watch": "^2.1.2",
-    "typescript": "^3.3.3333"
+    "rimraf": "^3.0.2",
+    "typescript": "^3.8.3"
   },
   "dependencies": {
-    "cors": "^2.8.5",
-    "ejs": "^2.6.2",
-    "express": "^4.16.4"
+    "@ne1410s/xprest": "0.0.0"
   }
 }
