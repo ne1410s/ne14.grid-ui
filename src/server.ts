@@ -1,5 +1,5 @@
 import { Xprest } from '@ne1410s/xprest';
-import * as apiConfig from './api.json'
+import * as apiConfig from './api.json';
 
 const xprest = new Xprest();
 

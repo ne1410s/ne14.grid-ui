@@ -11,8 +11,13 @@
   "scripts": {
     "start": "node dist/server.js",
     "clean": "rimraf dist",
+    "is-pretty": "npx prettier --list-different . --ignore-path .gitignore",
+    "prettify": "npx prettier --write . --ignore-path .gitignore",
     "build": "tsc",
-    "publish-patch": "npm version patch && npm run build && npm publish --access public"
+    "test": "npm run is-pretty",
+    "publish-patch": "npm run test && npm run clean && npm run build && npm version patch && npm publish --access public",
+    "publish-minor": "npm run test && npm run clean && npm run build && npm version minor && npm publish --access public",
+    "publish-major": "npm run test && npm run clean && npm run build && npm version major && npm publish --access public"
   },
   "repository": {
     "type": "git",
@@ -34,10 +39,11 @@
   },
   "homepage": "https://github.com/ne1410s/ne14.grid#readme",
   "devDependencies": {
+    "prettier": "^2.0.5",
     "rimraf": "^3.0.2",
-    "typescript": "^3.8.3"
+    "typescript": "^3.9.5"
   },
   "dependencies": {
-    "@ne1410s/xprest": "0.0.0"
+    "@ne1410s/xprest": "0.0.3"
   }
 }
